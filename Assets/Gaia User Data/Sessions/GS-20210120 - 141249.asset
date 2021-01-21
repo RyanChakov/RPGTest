@@ -117,11 +117,44 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: Smooth - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20210120 - 141251
+    m_operationDateTime: 1/20/2021 6:59:28 PM
+    scriptableObjectAssetGUID: ce9e2c3aeb14b074e866928169dbcc90
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20210120 - 141251
+    m_operationDateTime: 1/20/2021 7:00:20 PM
+    scriptableObjectAssetGUID: 70500ad0eb85c8e49ad08a7db4c7a90b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - No Masks
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20210120 - 141251
+    m_operationDateTime: 1/20/2021 7:00:43 PM
+    scriptableObjectAssetGUID: 31149698428f1f54492904a989c8db73
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: b32881950ce783e4ab1684f95f017c3d
     isWorldmap: 0
-    recalculate: 0
+    recalculate: 1
     min: 0
-    max: 127.533195
+    max: 129.68948
   m_bakedMaskCacheEntries: []
   m_worldBiomeMaskSettings: {fileID: 0}

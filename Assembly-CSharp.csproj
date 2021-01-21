@@ -274,7 +274,8 @@
     <Compile Include="Assets\Procedural Worlds\Gaia\Scripts\Water System\Reflections\ReflectionMasker.cs" />
     <Compile Include="Assets\Procedural Worlds\Gaia\Scripts\WindSystem\WindManager.cs" />
     <Compile Include="Assets\Procedural Worlds\Gaia\Shaders\Scripts\ShaderUtility.cs" />
-    <Compile Include="Assets\Scenes\Joe's Scene\NPC Script.cs" />
+    <Compile Include="Assets\Scenes\Joe's Scene\NPCScript.cs" />
+    <Compile Include="Assets\Scenes\Joe's Scene\UIScript.cs" />
     <None Include="Assets\Procedural Worlds\Gaia\Shaders\PW General\PW_SkyboxCubemap.shader" />
     <None Include="Assets\Procedural Worlds\Gaia\Asset Samples\NatureManufacture\_Readme.txt" />
     <None Include="Assets\Procedural Worlds\Gaia\Shaders\Unity\Terrain Tools\PowerOf.shader" />

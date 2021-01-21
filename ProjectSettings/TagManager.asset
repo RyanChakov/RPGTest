@@ -10,6 +10,7 @@ TagManager:
   - Synty Medium Farm
   - Synty Small Farm
   - Synty Tree
+  - NPC
   layers:
   - Default
   - TransparentFX

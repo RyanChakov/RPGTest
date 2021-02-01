@@ -10,8 +10,8 @@ public class NPCScript : MonoBehaviour
     public Text NPCline;
 
 
-    public GameObject player = // player capsule variable;
-    public GameObject NPC; = // npc capsule 
+    public GameObject player;
+    public GameObject NPC;
 
 
 
@@ -19,52 +19,44 @@ public class NPCScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //drawing the raycast coming out of my guy
 
+        Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * 10f, Color.blue);
+
+        //IF The camera is within 10 feet of a Game Object with the hit collider NPC. then the "Press E to talk text appears"
+
+        
         if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 10f))
         {
 
-            if(hit.collider.tag == "NPC")
+            if (hit.collider.tag == "NPC")
             {
 
 
-
-                if (Vector3.Distance( // distance between variables of player capsule and npc capsule is <5 unity units){
-
-
-                          text.SetActive(true);
-
-
-
-
+                text.SetActive(true);
+               
             }
+           
 
 
-              
-
-
-
-                
-
-
-
-            }
-
+        }
+        else
+        {
+            text.SetActive(false);
         }
 
 
-        
-
-    // If you press E on a unit with a NPC tag then the Ryan is dumb thing should appear
+        // If you press E on a unit with a NPC tag then the Ryan is dumb thing should appear
 
 
 
-        if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 10f) )
+        if (Input.GetKeyDown(KeyCode.E) && Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, 10f))
         {
 
             if (hit.collider.tag == "NPC")
@@ -75,13 +67,16 @@ public class NPCScript : MonoBehaviour
 
             }
 
+        }
 
+        if (Input.GetKeyDown(KeyCode.Escape)){
 
+            NPCline.text = "";
+              
 
         }
 
 
 
-
-        }
+    }
 }
